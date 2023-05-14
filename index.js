@@ -3,8 +3,8 @@ const cors = require("cors");
 // const { auth } = require("./auth/auth");
 const { connection } = require("./db");
 const { userrouter } = require("./routes/userroute");
-const { postroute } = require("./routes/postroute");
-const { auth } = require("./middleware/Authmiddleware");
+// const { postroute } = require("./routes/postroute");
+// const { auth } = require("./middleware/Authmiddleware");
 // const { userrouter } = require("./route/userroutes");
 // const { postroute } = require("./route/postroute");
 
@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use("/users", userrouter);
 
-app.use(auth);
+// app.use(auth);
 // app.use("/posts", postroute);
 
 
